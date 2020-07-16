@@ -2,6 +2,8 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    color: #7b7f88;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -14,7 +16,8 @@
     max-width: 1000px;
     width: 100%;
     margin: 0 auto;
-    background-color: #2e4052;
+    /* background-color: #2e4052; */
+    background-color: #35383f;
     border-radius: 20px;
     padding: 40px;
 }
@@ -22,8 +25,7 @@
 .container0 {
     border: 10px solid white;
     border-radius: 20px;
-    padding: 30px;
-    
+    padding: 30px;  
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -45,19 +47,6 @@
 .container1 {
     width: 30%;
 }
-.container2 {
-    width: 70%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.container2 video {
-    width: 90%;
-}
-.container2 .iconos {
-    width: 10%;
-}
 
 .container1 .logo img{
     width: 100%;
@@ -78,7 +67,7 @@
 
 .container1 p {
     font-family: 'Roboto', sans-serif;
-    color: #cfd2cd;
+    color: #7b7f88;
     font-size: 18px;
     text-align: center;
 }
@@ -93,55 +82,126 @@
     margin-bottom: 30px;
 }
 
-.container1 .pucharse p{
+/* .container1 .purchase p{
     border: 1px solid #788585;
     border-radius: 30px;
-    /*box-shadow: 1px 1px 1px 1px #788585;*/
     cursor: pointer;
     padding: 10px;
 }
-.container1 .pucharse p:hover {
+.container1 .purchase p:hover {
     background: #2e86ab;
     color: #000;
     transition: all .3 ease-in-out;
+} */
+.purchase {
+    text-align: center;
+}
+.purchase__button {
+    background: #25282f;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(29,32,39,0.6);
+    box-shadow: inset 5px 5px 5px 0px rgba(29,32,39,1), inset -1px -1px 5px 0px rgba(111,113,120,1);;
+    color: rgb(137, 142, 153);
+
 }
 .container2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 60%;
+    position: relative;
+}
+/* Porqué hay dos definiciones de container2? */
+.container2 video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    border-radius: 10px;
+}
+/* También puedes colapsar esto de abajo */
+/* -------------------------------------------- */
+.container2 .iconos {
+    width: 10%;
 }
 .container2 .iconos {
     display: flex;
     flex-direction: column;
     /*margin-left: -20px;*/
 }
+/* -------------------------------------------- */
 .container2 .iconos a {
     font-size: 30px;
     color: #fff;
     margin-left: 5px;
     margin-bottom: 10px;
-    
+}
+
+.iconos i {
+    color: white;
 }
 .container2 .iconos a:hover {
     color: #2e86ab;
 }
-
-.textos .featured{
-    font-family: 'Roboto', sans-serif;
-    color: #fff;
-    font-size: 16px;
-    padding: 10px;
-    background: #ca054d;
+ /* Si son iguales puedes colapsarlo en una sola clase */
+ /* ------------------------------------------------------ */
+ /* .textos .featured{
+     font-family: 'Roboto', sans-serif;
+     color: #fff;
+     font-size: 16px;
+     padding: 10px;
+     background: #ca054d;
+     text-align: center;
+    }
+    
+    .textos .txt {
+        font-family: 'Roboto', sans-serif;
+        color: #fff;
+        font-size: 16px;
+        padding: 10px;
+        text-align: start;   
+        line-height: 3px;
+    } */
+/* ------------------------------------------------------ */
+.iconos {
+    z-index: 2;
+    position: absolute;
+    bottom: 10%;
+    right: 10px;
+}
+.textos {
+    z-index: 2;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
+.textos .featured, .textos .txt{
+        font-family: 'Roboto', sans-serif;
+        color: #fff;
+        font-size: 16px;
+        /* padding: 10px; */
+}
+.textos .featured {
     text-align: center;
+    display: inline-block;
+}
+.textos .featured span {
+    color: inherit;
+    background: #ca054d;
+    padding:5px 15px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+.textos .txt {
+    text-align: start;   
+}
+.bold {
+    font-weight: bold;
 }
 
-.textos .txt {
-    font-family: 'Roboto', sans-serif;
-    color: #fff;
-    font-size: 16px;
-    padding: 10px;
-    text-align: start;   
-    line-height: 3px;
+.m-0 {
+    margin: 0px;
 }
 
 
