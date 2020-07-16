@@ -1,0 +1,178 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #fff;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.containerPrincipal {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #2e4052;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.container0 {
+    border: 10px solid white;
+    border-radius: 20px;
+    padding: 30px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+   
+@keyframes colores { /*colores = "nombre de la animación*/
+    /*from{background: #FFBE0B;}*/ /*iniciará de este color...*/
+    /*to{background: #3A86FF;}*/ /*... a este otro color*/
+
+    0%{background: #FF1B1C;} /*De esta manera lo hace por porcentajes...*/
+    25%{background: #F0C808;}
+    50%{background: #E365C1;}
+    75%{background: #00BFB2;}
+    100%{background: #FF1B1C;}
+}
+
+.container1 {
+    width: 30%;
+}
+.container2 {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container2 video {
+    width: 90%;
+}
+.container2 .iconos {
+    width: 10%;
+}
+
+.container1 .logo img{
+    width: 100%;
+    max-width: 100px;
+    border-radius: 100%;
+}
+.container1 .logo {
+    display: flex;
+}
+
+.container1 h2 {
+    font-family: 'Amaranth', sans-serif;
+    color: #cfd2cd;
+    font-size: 80px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.container1 p {
+    font-family: 'Roboto', sans-serif;
+    color: #cfd2cd;
+    font-size: 18px;
+    text-align: center;
+}
+
+.container1 .nDigital {
+    margin-top: -50px;
+    margin-bottom: 70px;
+}
+.container1 .nova5t {
+    font-weight: 300;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.container1 .pucharse p{
+    border: 1px solid #788585;
+    border-radius: 30px;
+    /*box-shadow: 1px 1px 1px 1px #788585;*/
+    cursor: pointer;
+    padding: 10px;
+}
+.container1 .pucharse p:hover {
+    background: #2e86ab;
+    color: #000;
+    transition: all .3 ease-in-out;
+}
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container2 .iconos {
+    display: flex;
+    flex-direction: column;
+    /*margin-left: -20px;*/
+}
+.container2 .iconos a {
+    font-size: 30px;
+    color: #fff;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    
+}
+.container2 .iconos a:hover {
+    color: #2e86ab;
+}
+
+.textos .featured{
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    background: #ca054d;
+    text-align: center;
+}
+
+.textos .txt {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    text-align: start;   
+    line-height: 3px;
+}
+
+
+@media screen and (max-width:700px) {
+    .container1 .logo img{
+        margin: 0 auto;
+    }
+    .container1 {
+        width: 100%;
+    }
+    .container2 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:460px){
+    .containerPrincipal {
+        padding: 5px 5px;
+    }
+    .container2 video {
+        width: 100%;
+    }
+    .container2 .iconos {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .container2 .iconos a {
+        font-size: 18px;
+    }
+    .textos .txt {
+        line-height: 15px;
+    }
+}
